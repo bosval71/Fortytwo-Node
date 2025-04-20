@@ -37,10 +37,12 @@ Other: Ensure your system has the latest drivers and Windows updates installed.
   You can clone this repo and run the setup script:
 
   ```bash
-  git clone https://github.com/MIRACLE69/Fortytwo-Node.git
-  cd Fortytwo-Node
-  chmod +x setup.sh
-  ./setup.sh
+mkdir -p ~/Fortytwo && cd ~/Fortytwo
+curl -L -o fortytwo-console-app.zip https://github.com/Fortytwo-Network/fortytwo-console-app/archive/refs/heads/main.zip
+unzip fortytwo-console-app.zip
+cd fortytwo-console-app-main
+screen -S 42
+chmod +x linux.sh && ./linux.sh
 
 📜 What the Script Does
 Updates your system packages
